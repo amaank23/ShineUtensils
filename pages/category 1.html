@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/33.png" type="image/gif">
+    <title>Product</title>
+    <link rel="stylesheet" href="../product.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <script data-require="jquery@3.1.1" data-semver="3.1.1" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/44a9799caa.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Assistant&display=swap" rel="stylesheet">
+</head>
+
+<body style="background-color: #EFF0F5;" onload="show_cat1()">
+    <nav class="navbar navbar-expand-sm navbar-light bg-dark">
+        <a class="navbar-brand" href="../index.html">
+            <h3 class="ml-2">Shine<span>Utensils</span></h3>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+
+            <form class="form-inline ml-auto ">
+                <input type="text" placeholder="Search" class="search">
+                <button class="button">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-search fa-w-16 fa-fw"><path fill="black" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" class=""></path></svg>
+                    </button>
+            </form>
+
+        </div>
+
+    </nav>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto ">
+                <li class="nav-item active">
+
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Category</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="../products/3/index.html">Coffee & Tea</a>
+                        <a class="dropdown-item" href="../products/2/index.html">Curtley</a>
+                        <a class="dropdown-item" href="../products/4/index.html">Cookware</a>
+                        <a class="dropdown-item" href="../products/5/index.html">Bakeware</a>
+                        <a class="dropdown-item" href="../products/1/index.html"> Appliances & Electrics Juicers & Blenders</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="comparsionv1.html">Compare Products</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="about us.html">About Us</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="contactus.html">Contact Us</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="signup.html">Signup</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container mt-5" style="background-color: white;">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="1.jpg" alt="" style="max-width: 100%;" id="img1">
+                <div class="container-fluid">
+                    <div class="row mt-2">
+                        <img src="1.jpg" alt="" style="width: 100%;" class="col-md-3 col-sm-3" height="100px" id="img2">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <small style="color: #757575;">BAKING UTENSILS</small>
+                <h1 id="h1">French Kitchen Marble Rolling Pin with Stand</h1>
+                <h5 style="color: crimson; font-weight: bold;" id="p">$999</h5>
+                <small style="color: #757575;">In stock and ready to ship</small>
+                <hr>
+                <p id="description">Beautiful, cool white marble rolling pin has the smoothness and heft to handle even the toughest dough. Display-worthy rolling pin nests in a rubberwood stand that matches the ergonomic handles. Each pin will differ due to the natural
+                    characteristics of the marble. Because marble is a natural product, veining and coloring variations will occur; see additional images for examples.</p>
+                <div class="quantity buttons_added mb-4">
+                    <label class="mt-2" style="color: #757575;">Quantity</label>
+                    <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+                </div><br>
+                <button class="btn btn-danger"><a href="form.html" style="color: white;">Buy Now</a></button>
+
+
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+
+            <div class="col-md-6">
+                <h2>Details</h2>
+                <hr>
+                <p>French Kitchen Marble Rolling Pin with Stand. 2.5" dia. x 18"W</p>
+                <ul id="ul">
+                    <script>
+                        var category = localStorage.getItem("category");
+                        var cat2 = JSON.parse(category);
+                        for (var i = 0; i < cat2.length; i++) {
+                            document.write("<li>");
+                            document.write(cat2[i]);
+                            document.write("</li>");
+                        }
+                    </script>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h2>Dimention</h2>
+                <hr>
+                <p>Overall Dimensions</p>
+                <ul>
+                    <li>Width: <span id="width"></span></li>
+                    <li>Height: <span id="height"></span></li>
+                    <li>Depth: <span id="depth"></span></li>
+
+                </ul>
+            </div>
+        </div>
+        <h1>RELATED PRODUCTS</h1>
+        <div class="container">
+
+            <div id="rel" class="cardss">
+
+            </div>
+        </div>
+    </div>
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <h3>Shine<span>Utensils</span></h3>
+
+            <p class="footer-links">
+                <a href="../index.html">Home</a> ·
+                <a href="about us.html">About</a> ·
+                <a href="contactus.html">Contact</a>
+            </p>
+
+            <p class="footer-company-name">shineutensils &copy; 2020</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Korangi 3</span> Karachi, Pakistan</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+92 313 216 4468</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@company.com">amaanwaseem24@gmail.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>About the company</span> Shine Utensils is a online utensils store, we provide best service in the field
+            </p>
+
+            <div class="footer-icons">
+
+                <a href="#"><i class="fab fa-facebook-f"></i>
+
+                </a>
+                <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="../js/index.js"></script>
+    <script src="../js/category 1.js"></script>
+    <script>
+        function wcqib_refresh_quantity_increments() {
+            jQuery("div.quantity:not(.buttons_added), td.quantity:not(.buttons_added)").each(function(a, b) {
+                var c = jQuery(b);
+                c.addClass("buttons_added"), c.children().first().before('<input type="button" value="-" class="minus" />'), c.children().last().after('<input type="button" value="+" class="plus" />')
+            })
+        }
+        String.prototype.getDecimals || (String.prototype.getDecimals = function() {
+            var a = this,
+                b = ("" + a).match(/(?:\.(\d+))?(?:[eE]([+-]?\d+))?$/);
+            return b ? Math.max(0, (b[1] ? b[1].length : 0) - (b[2] ? +b[2] : 0)) : 0
+        }), jQuery(document).ready(function() {
+            wcqib_refresh_quantity_increments()
+        }), jQuery(document).on("updated_wc_div", function() {
+            wcqib_refresh_quantity_increments()
+        }), jQuery(document).on("click", ".plus, .minus", function() {
+            var a = jQuery(this).closest(".quantity").find(".qty"),
+                b = parseFloat(a.val()),
+                c = parseFloat(a.attr("max")),
+                d = parseFloat(a.attr("min")),
+                e = a.attr("step");
+            b && "" !== b && "NaN" !== b || (b = 0), "" !== c && "NaN" !== c || (c = ""), "" !== d && "NaN" !== d || (d = 0), "any" !== e && "" !== e && void 0 !== e && "NaN" !== parseFloat(e) || (e = 1), jQuery(this).is(".plus") ? c && b >= c ? a.val(c) : a.val((b + parseFloat(e)).toFixed(e.getDecimals())) : d && b <= d ? a.val(d) : b > 0 && a.val((b - parseFloat(e)).toFixed(e.getDecimals())), a.trigger("change")
+        });
+        var related_products1 = [{
+            name: "Nutri Ninja  Blender Duo",
+            price: "27619",
+            overview: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            description: ["Plastic and steel construction", "BPA-free Tritan  plastic and tumblers", "Stainless steel blades", "Auto-iQ intelligent blending programs: Puree, Frozen Drinks/Smoothies, Blend, Ultra Blend and Pulse", "blending speeds: low, medium and high", "72-oz. capacity/64-oz. liquid capacity pitcher", "24- and 32-oz. travel cups and two travel lids", "1,200 watts", "Removable parts are dishwasher-safe", "Made in China", "Item Number: BL641"],
+            dimensions: {
+                width: "9.724",
+                height: "8.465",
+                depth: "17.99"
+            },
+            images: ["1.jpg", "11.jpg"]
+
+        }, {
+            name: "Ninja  Chef Blender",
+            price: "25000",
+            overview: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            description: ["BPA-free Tritan ™ plastic 72-oz. pitcher and 24-oz. double-walled to-go tumbler and spout lid", "Stainless steel blades", "1,500 watt-motor", "10 pre-set Auto IQ programs: flour/mill, frozen drink, extract, smoothie, soup, ice cream, puree, dips/salsa, dressing and nut butter and manual speeds", "10 manual speeds with variable speed range", "Programmable timer", "Clean program", "Includes instruction book, recipe guide and tamper", "Removable parts are dishwasher-safe; not microwaveable- or freezer-safe", "Made in China", "Item Number: CT810"],
+            dimensions: {
+                width: "9.713",
+                height: "8.488",
+                depth: "17.5"
+            },
+            images: ["2.jpg", "22.jpg"]
+        }, {
+            name: "Smeg Cream Hand Blender",
+            price: "24000",
+            overview: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            description: ["Plastic painted body", "Ergonomic and anti-slip handle", "Stainless steel arm and blades", "FLOWBLEND ™ blade system", "Variable speed knob", "On-off and turbo function buttons", "350 watts", "Includes masher, chopper, whisk and beaker", "Hand wash; not dishwasher-safe", "Made in China", "Item Number:HBF02CRUS"],
+            dimensions: {
+                width: "13",
+                height: "6",
+                depth: "12"
+            },
+            images: ["3.jpg", "33.jpg"]
+        }, {
+            name: "KitchenAid K400 Silver Blender",
+            price: "30000",
+            overview: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            description: ["Stainless steel asymmetrical blade", "BPA-free plastic pitcher", "Die-cast metal base", "5 speeds", "3 preset recipe programs: Ice Crush, Icy Drinks, and Smoothie", "Soft Start ® starts motor slowly speed to pull food into the blade then increases to selected speed to avoid splatter", "Intelli-Speed ® Motor Control senses contents and maintains optimal speed to power through all ingredients", "56-oz. jar with measurement markings", "Included tamper pushes ingredients into blending vortex", "1.5 peak HP motor", "1,200 watts/120 volts", "3½' power cord", "Dishwasher-safe accessories; wipe base clean with damp cloth", "Made in China", "Item Number: KSB4028CU"],
+            dimensions: {
+                width: "7.59",
+                height: "9.02",
+                depth: "15.8"
+            },
+            images: ["4.jpg", "44.jpg"]
+        }]
+        var str0 = "";
+        for (var i = 0; i < related_products1.length; i++) {
+            str0 = str0 +
+                '<div class="card text-left">' +
+                '<img class="card-img-top" src="../products/1/img/' + related_products1[i].images[0] + '" alt="" height="300">' +
+                '<div class="card-body text-center">' +
+                '<p class="card-title" id="title5' + i + '" onclick="page(this.id)" style="margin-bottom: 0; font-weight: bold;">' + related_products1[i].name + '</p>' +
+                '<small style="color: #757575;">BAKING UTENSILS</small>' +
+                '<p class="card-text" id="desc5' + i + '" style="font-weight: bold;">' + "Rs. " + related_products1[i].price + '</p>' +
+                '</div>' +
+                '</div>'
+
+        }
+
+
+
+        document.getElementById("rel").innerHTML = str0;
+    </script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

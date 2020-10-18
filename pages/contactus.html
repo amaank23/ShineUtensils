@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Contact us</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="../img/33.png" type="image/gif">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/44a9799caa.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Assistant&display=swap" rel="stylesheet">
+    <script>
+        function datashow() {
+            var x = document.getElementsByClassName("datashow1");
+            var i;
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById('datashow').style.display = "block";
+        }
+
+        function datashow1() {
+
+            var x = document.getElementsByClassName("datashow1");
+
+            var i;
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "block";
+            }
+            document.getElementById('datashow').style.display = "none";
+        }
+
+    </script>
+    <style>
+        body {
+            background-color: rgb(239, 244, 248);
+        }
+        
+        .wavy {
+            position: absolute;
+            width: 100%;
+            height: 143px;
+            background: url(img/wave.png);
+            animation: animate 10s linear infinite;
+        }
+        
+        .wavy:before {
+            content: '';
+            width: 100%;
+            height: 143px;
+            background: url(img/wave.png);
+            position: absolute;
+            opacity: 0.4;
+            animation: animate-reverse 10s linear infinite;
+        }
+        
+        @keyframes animate {
+            0% {
+                background-position: 0;
+            }
+            100% {
+                background-position: 1360px;
+            }
+        }
+        
+        @keyframes animate-reverse {
+            0% {
+                background-position: 1360px;
+            }
+            100% {
+                background-position: 0px;
+            }
+        }
+        
+        #pointer {
+            border: solid 10px transparent;
+            border-right-color: #fff;
+            position: absolute;
+            margin: -85px 0 0 -20px;
+        }
+        
+        .map-container {
+            overflow: hidden;
+            padding-bottom: 56.25%;
+            position: relative;
+            height: 0;
+            top: 0px;
+        }
+        
+        .map-container iframe {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+        
+        .box {
+            border: 2px solid blue;
+            position: relative;
+            background-color: blue;
+            color: white;
+        }
+        
+        .box:before {
+            content: "";
+            width: 10px;
+            height: 15px;
+            background-color: blue;
+            position: absolute;
+            left: 50%;
+            top: 80%;
+            transform: translate(-40%)rotate(45deg);
+        }
+        .box:hover{
+            color: white;
+            opacity: 0.6;
+        }
+        
+        ul {
+            list-style-type: none;
+        }
+        
+        @-webkit-keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div style="width: 100%;">
+        <nav class="navbar navbar-expand-sm navbar-light bg-dark">
+            <a class="navbar-brand" href="../index.html">
+                <h3 class="ml-2">Shine<span>Utensils</span></h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+
+                <form class="form-inline ml-auto ">
+                    <input type="text" placeholder="Search" class="search">
+                    <button class="button">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-search fa-w-16 fa-fw"><path fill="black" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" class=""></path></svg>
+                        </button>
+                </form>
+
+            </div>
+
+        </nav>
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto ">
+                    <li class="nav-item active">
+
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Category</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="../products/3/index.html">Coffee & Tea</a>
+                            <a class="dropdown-item" href="../products/2/index.html">Curtley</a>
+                            <a class="dropdown-item" href="../products/4/index.html">Cookware</a>
+                            <a class="dropdown-item" href="../products/5/index.html">Bakeware</a>
+                            <a class="dropdown-item" href="../products/1/index.html"> Appliances & Electrics Juicers & Blenders</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="comparsionv1.html">Compare Products</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="about us.html">About Us</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contactus.html">Contact Us</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="signup.html">Signup</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row wavy " style="top: 500px;"></div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="tex text-center">
+                        <br><br>
+                        <div class="btn  box" onclick="datashow1()">Contact Us </div>
+                        <div class="btn  box" onclick="datashow()">Store Location </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container" id="datashow" style="display: none;">
+            <h1 class="pl-5" id="branches">Our Locations</h1>
+            <div class="row">
+                <div class="col-md-3">
+
+                    <h2 class="h2  pt-5" style="color:black;">
+                        <ul style="font-family: sans-serif;float: left;font-size: 25px;font-weight: bold;">
+                            <li><img src="../img/8.jpg" width="50%" height="100px"> <br>Turkey
+
+                            </li>
+                            <li><img src="../img/l2.jpg" width="50%" height="100px"> <br>London
+
+                            </li>
+                            <br>
+                            <div style="display: flex;"> <i class="im im-facebook mr-3" style="font-size: 35px;color: blue;"></i>
+                                <i class="im im-instagram mr-3 " style=" background: linear-gradient(to right, pink,rgb(226, 139, 200));
+                                -webkit-text-fill-color: transparent;
+                                -webkit-background-clip: text;font-size: 35px; "></i>
+                                <i class="im im-twitter text-center  mr-3" style="color:blue;font-size: 35px;" aria-hidden="true"></i>
+                                <i class="im im-youtube mr-3 " style="color: red;font-size: 35px;"></i>
+                                <br>
+                            </div>
+                    </h2>
+                </div>
+                <ul class="col-md-3">
+
+                    <h2 class="h2 mr-5 pt-5" style="color:black;">
+                        <ul style="font-family: sans-serif;float: left;font-size: 25px;font-weight: bold;">
+                            <li><img src="../img/lahore.jpg" style="background-position: center;" class="w-75" width="50%" height="100px"> <br>Pakistan
+
+                            </li>
+                            <li><img src="../img/egypt.jpg" style="background-position: center;" class="w-75" width="50%" height="100px"> <br>Egypt
+                            </li>
+                    </h2>
+                    </ul>
+                </ul>
+                <div class="col-md-6 mx-auto">
+
+                    <div id="map-container-google-1" class="z-depth-1-half map-container " style="height: 400px ">
+                        <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="container-fluid datashow1">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center" style="padding-top: 20px;font-size: 35px;">HAVE SOME QUESTION
+                        <p style="font-weight: normal;font-size: 11px"><br> <img src="../img/worldicon.png" style="width: 20px; " alt=""><br>Pakistan</p>
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="container datashow1">
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="img/mesgiconcomp1.png" class="text-center mt-4" style="width: 90%; " alt="">
+                </div>
+                <div class="col-md-1 mt-5">
+                    <i class="im im-facebook" style="font-size: 20px;color: blue;"></i><br>
+                    <i class="im im-instagram" style=" background: linear-gradient(to right, pink,rgb(226, 139, 200));
+                    -webkit-text-fill-color: transparent;
+                    -webkit-background-clip: text;
+                  "></i><br>
+                    <i class="im im-twitter" style="color: blue;"></i><br>
+                    <i class="im im-youtube" style="color: red;"></i>
+
+                </div>
+                <div class="col-md-5" style="top: 15px;">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Enter email">
+                    </div>
+
+                    <div class="form-group">
+                        <textarea class="form-control" rows="3" placeholder="Message"></textarea>
+
+                    </div>
+                    <button class="btn btn-primary text-center">Send Message</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <h3>Shine<span>Utensils</span></h3>
+
+            <p class="footer-links">
+                <a href="../index.html">Home</a> ·
+                <a href="about us.html">About</a> ·
+                <a href="contactus.html">Contact</a>
+            </p>
+
+            <p class="footer-company-name">shineutensils &copy; 2020</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Korangi 3</span> Karachi, Pakistan</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+92 313 216 4468</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@company.com">amaanwaseem24@gmail.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>About the company</span> Shine Utensils is a online utensils store, we provide best service in the field
+            </p>
+
+            <div class="footer-icons">
+
+                <a href="#"><i class="fab fa-facebook-f"></i>
+
+                    </a>
+                <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+
+            </div>
+
+        </div>
+
+    </footer>
+    </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

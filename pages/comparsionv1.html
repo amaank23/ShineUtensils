@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Compare Products</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="../img/33.png" type="image/gif">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css?family=Assistant&display=swap" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/44a9799caa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        hr {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+        }
+        
+        ul {
+            list-style-type: none;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            #img,
+            #img,
+            #title,
+            #title1 {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+    <script>
+        var products = [{
+            name: "Nutri Ninja  Blender Duo",
+            price: "27619",
+            overview: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            description: ["Plastic and steel construction", "BPA-free Tritan  plastic and tumblers", "Stainless steel blades", "Auto-iQ intelligent blending programs: Puree, Frozen Drinks/Smoothies, Blend, Ultra Blend and Pulse", "blending speeds: low, medium and high", "72-oz. capacity/64-oz. liquid capacity pitcher", "24- and 32-oz. travel cups and two travel lids", "1,200 watts", "Removable parts are dishwasher-safe", "Made in China", "Item Number: BL641"],
+            dimensions: {
+                width: "9.724",
+                height: "8.465",
+                depth: "17.99"
+            },
+            images: ["1/img/1.jpg", "1/img/11.jpg"]
+
+        }, {
+            name: "The Kitchen Company Deluxe Serving Spoon, Set of 3",
+            price: "499",
+            overview: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            description: ["The fortifying brick design lasered on it, this artistry adds to its golden age’s appeal.", "Made of high-quality stainless steel.", "Structure only paves the way for excellent quality and sturdy usage."],
+            dimensions: {
+                width: "5cm",
+                height: "26cm",
+                depth: "10cm"
+            },
+            images: ["2/img/2.png", "2/img/22.png"]
+        }, {
+            name: "Burleigh Blue Arden Tea Cup",
+            price: "2678",
+            overview: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            description: ["Handmade in Middleport Pottery, England", "Uniquely decorated by skilled craftsmen with Burleigh’s centuries-old technique of tissue transfer printing from hand-engraved copper rollers", "Capacity: 187ml"],
+            dimensions: {
+                width: "2.3",
+                height: "3.3",
+                depth: "2.2"
+            },
+            images: ["3/img/3.png", "3/img/33.png"]
+        }, {
+            name: "Cuisinart 9 Inch Round Cake Pan Chef's Classic Non-Stick",
+            price: "10000",
+            overview: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            description: ["Non-stick", "Limited lifetime warranty", "9 Round", "From the  Chef 's Classic Cuisinart Bakeware Series"],
+            dimensions: {
+                width: "7.59",
+                height: "9.02",
+                depth: "8.8"
+            },
+            images: ["4/img/4.jpg"]
+        }, {
+            name: "Presto Pressure Cooker  Canner - 23 Qt",
+            price: "33000",
+            overview: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            description: ["Regular Mason Jar Capacity: 24 half pint jars 20 one pint jars or 7 one quart jars", "Air vent/cover lock allows pressure to build only when the cover is closed properly", "Air Vent/Cover lock prevents the cover from opening until pressure is safely reduced", "Includes cooking/canning rack and complete instruction/recipe book", "Presto Pressure Cooker has 22-Quart Liquid Capacity (20.9 Liters)"],
+            dimensions: {
+                width: "10.22",
+                height: "20.4",
+                depth: "18.12"
+            },
+            images: ["5/img/5.jpg"]
+        }];
+        var products1 = [{
+                name: "Cuisinart  Smart Stick  Cordless Hand Blender",
+                price: "12000",
+                overview: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                description: ["Plastic and steel construction", "BPA-free Tritan  plastic and tumblers", "Stainless steel blades", "Auto-iQ intelligent blending programs: Puree, Frozen Drinks/Smoothies, Blend, Ultra Blend and Pulse", "blending speeds: low, medium and high", "72-oz. capacity/64-oz. liquid capacity pitcher", "24- and 32-oz. travel cups and two travel lids", "1,200 watts", "Removable parts are dishwasher-safe", "Made in China", "Item Number: BL641"],
+                dimensions: {
+                    width: "2.03",
+                    height: "10.08",
+                    depth: "2.03"
+                },
+                images: ["1/img/6.jpg", "1/img/66.jpg"]
+            }, {
+                name: "Brabantia Serving Spoon plus Scraper",
+                price: "699",
+                overview: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                description: ["Perfect shape to scrape clean the corners of your pan", "Durable - made of high-grade, heat resistant nylon (max. 220°C)", "No damage to non stick cookware", "Easy to store - hanging loop", "Easy to clean - dishwasher safe", "Part of the Brabantia TASTY+ collection - a colourful tool for every kitchen job"],
+                dimensions: {
+                    width: "6.4cm",
+                    height: "7.2cm",
+                    depth: "3.5cm"
+                },
+                images: ["2/img/7.png", "2/img/77.png"]
+            }, {
+                name: "Denby Natural Canvas Textured Tea and Coffee Cup",
+                price: "2299",
+                overview: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                description: ["Made in England", "Included in Denby’s 10 Year Guarantee", "Expertly glazed to prevent chipping and enhance durability", "Suitable for oven, microwave and freezer", "Dishwasher safe"],
+                dimensions: {
+                    width: "3.86",
+                    height: "5.78",
+                    depth: "4.91"
+                },
+                images: ["3/img/8.png", "3/img/88.png"]
+            }, {
+                name: "KitchenAid K400 Silver Blender",
+                price: "30000",
+                overview: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                description: ["Stainless steel asymmetrical blade", "BPA-free plastic pitcher", "Die-cast metal base", "5 speeds", "3 preset recipe programs: Ice Crush, Icy Drinks, and Smoothie", "Soft Start ® starts motor slowly speed to pull food into the blade then increases to selected speed to avoid splatter", "Intelli-Speed ® Motor Control senses contents and maintains optimal speed to power through all ingredients", "56-oz. jar with measurement markings", "Included tamper pushes ingredients into blending vortex", "1.5 peak HP motor", "1,200 watts/120 volts", "3½' power cord", "Dishwasher-safe accessories; wipe base clean with damp cloth", "Made in China", "Item Number: KSB4028CU"],
+                dimensions: {
+                    width: "7.59",
+                    height: "9.02",
+                    depth: "15.8"
+                },
+                images: ["1/img/4.jpg", "1/img/44.jpg"]
+            }, {
+                name: "Hurom Citrus Juicer",
+                price: "23000",
+                overview: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                description: ["Plastic with stainless steel finish", "Near-silent motor", "Drip-stop juice outlet", "Slow-squeeze technology doesn't shred fruit", "Single-handed, motor-assisted action", "3-part assembly is easy to clean", "Made in South Korea", "Item Number: CJ-B01BSS"],
+                dimensions: {
+                    width: "1.22",
+                    height: "7.4",
+                    depth: "9.12"
+                },
+                images: ["1/img/5.jpg", "1/img/55.jpg"]
+            }
+
+        ]
+    </script>
+</head>
+
+<body>
+    <div style="width: 100%;">
+        <nav class="navbar navbar-expand-sm navbar-light bg-dark">
+            <a class="navbar-brand" href="../index.html">
+                <h3 class="ml-2">Shine<span>Utensils</span></h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+
+                <form class="form-inline ml-auto ">
+                    <input type="text" placeholder="Search" class="search">
+                    <button class="button">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-search fa-w-16 fa-fw"><path fill="black" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" class=""></path></svg>
+                    </button>
+                </form>
+
+            </div>
+
+        </nav>
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto ">
+                    <li class="nav-item active">
+
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Category</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="../products/3/index.html">Coffee & Tea</a>
+                            <a class="dropdown-item" href="../products/2/index.html">Curtley</a>
+                            <a class="dropdown-item" href="../products/4/index.html">Cookware</a>
+                            <a class="dropdown-item" href="../products/5/index.html">Bakeware</a>
+                            <a class="dropdown-item" href="../products/1/index.html"> Appliances & Electrics Juicers & Blenders</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="comparsionv1.html">Compare Products</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="about us.html">About Us</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contactus.html">Contact Us</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="signup.html">Signup</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container-fluid bg-light mt-5 mb-5">
+            <div class="row">
+                <!-- <div class="col-md-4"></div> -->
+                <div class="col-md-8">
+                    <h1 class="mb-5">COMPARE PRODUCTS</h1>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="container-fluid bg-light mt-5">
+            <div class="row">
+                <div class="container-fluid bg-light mb-5">
+                    <div class="row ">
+
+
+                        <div class="col-md-4 "></div>
+                        <div class="col-md-4">
+                            <select name="" id="title" onchange="compare()" class="btn btn-secondary" style="width: 240px">
+                    <option>Select</option>
+                    <script>
+                        for(var i = 0; i < products.length; i++){
+                            document.write("<option value='"+ products[i].name +"' id='"+ i +"'>" + products[i].name + "</option>")
+                        }
+                    </script>
+                </select>
+                        </div>
+                        <div class="col-md-4">
+                            <select name="" id="title1" onchange="compare1()" class="btn btn-secondary" style="width: 240px">
+                    <option>Select</option>
+                    <script>
+                        for(var i = 0; i < products.length; i++){
+                            document.write("<option value='"+ products[i].name +"' id='"+ i +"'>" + products[i].name + "</option>")
+                        }
+                    </script>
+                </select>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+
+                    <h3 style="font-weight: bold;">PRODUCT</h3>
+                    <h3 style="font-weight: bold;">PHOTO</h3>
+                </div>
+
+                <div class="col-md-4  ">
+
+                    <img src="../products/1/img/5.jpg" height=" 240px " width="240px " id="img">
+                </div>
+                <div class="col-md-4 ">
+                    <img src="../products/1/img/6.jpg " height="240px " width="240px " id="img1">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-light">
+            <div class="row">
+                <div class="col-md-12">
+                    <hr>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="container-fluid bg-light">
+            <div class="row">
+
+
+                <div class="col-md-4">
+
+                    <p style="font-weight: bold;">Name</p>
+                </div>
+                <div class="col-md-4  ">
+
+                    <p id="head">Hurom Citrus Juicer </p>
+                </div>
+                <div class="col-md-4 ">
+                    <p id="head1">Cuisinart Smart Stick Cordless Hand Blender</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-light">
+            <div class="row">
+
+
+                <div class="col-md-4">
+
+                    <p style="font-weight: bold;">Details</p>
+                </div>
+                <div class="col-md-4 ">
+
+                    <p id="ul">Plastic with stainless steel finish, Near-silent motor, Drip-stop juice outlet, Slow-squeeze technology doesn't shred fruit, Single-handed, motor-assisted action, 3-part assembly is easy to clean, Made in South Korea, Item Number:
+                        CJ-B01BSS
+                    </p>
+                </div>
+                <div class="col-md-4 ">
+                    <p id="ul1">Plastic and steel construction, BPA-free Tritan plastic and tumblers, Stainless steel blades, Auto-iQ intelligent blending programs: Puree, Frozen Drinks/Smoothies, Blend, Ultra Blend and Pulse, blending speeds: low, medium and high,
+                        72-oz. capacity/64-oz. liquid capacity pitcher, 24- and 32-oz. travel cups and two travel lids, 1,200 watts, Removable parts are dishwasher-safe, Made in China, Item Number: BL641</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-light">
+            <div class="row">
+
+
+                <div class="col-md-4">
+
+                    <p style="font-weight: bold;">Price</p>
+                </div>
+                <div class="col-md-4 ">
+
+                    <p id="price" style="font-weight: bold;">23000</p>
+                </div>
+                <div class="col-md-4 ">
+                    <p id="price1" style="font-weight: bold;">12000</p>
+                </div>
+            </div>
+        </div>
+        <footer class="footer-distributed">
+
+            <div class="footer-left">
+
+                <h3>Shine<span>Utensils</span></h3>
+
+                <p class="footer-links">
+                    <a href="../index.html">Home</a> ·
+                    <a href="about us.html">About</a> ·
+                    <a href="contactus.html">Contact</a>
+                </p>
+
+                <p class="footer-company-name">shineutensils &copy; 2020</p>
+            </div>
+
+            <div class="footer-center">
+
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>Korangi 3</span> Karachi, Pakistan</p>
+                </div>
+
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>+92 313 216 4468</p>
+                </div>
+
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="mailto:support@company.com">amaanwaseem24@gmail.com</a></p>
+                </div>
+
+            </div>
+
+            <div class="footer-right">
+
+                <p class="footer-company-about">
+                    <span>About the company</span> Shine Utensils is a online utensils store, we provide best service in the field
+                </p>
+
+                <div class="footer-icons">
+
+                    <a href="#"><i class="fab fa-facebook-f"></i>
+
+                </a>
+                    <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+
+                </div>
+
+            </div>
+
+        </footer>
+    </div>
+    <script>
+        function compare() {
+            var title = document.getElementById("title");
+            var options = title.options;
+            var id = options[options.selectedIndex].id;
+            var str = "";
+            for (var i = 0; i < products.length; i++) {
+                str = str + (products[i].description[i] + ", ");
+            }
+
+            document.getElementById("head").innerHTML = products[id].name;
+            document.getElementById("ul").innerHTML = str;
+            document.getElementById("img").src = "../products/" + products[id].images[0];
+            document.getElementById("price").innerHTML = products[id].price;
+        }
+
+        function compare1() {
+            var title = document.getElementById("title1");
+            var options = title.options;
+            var id = options[options.selectedIndex].id;
+            var str = "";
+            for (var i = 0; i < products1.length; i++) {
+                str = str + (products1[i].description[i] + ", ");
+            }
+
+            console.log(id);
+            document.getElementById("head1").innerHTML = products[id].name;
+            // document.getElementById("overview1").innerHTML = products[id].overview;
+            document.getElementById("ul1").innerHTML = str;
+            document.getElementById("img1").src = "../products/" + products[id].images[0];
+            document.getElementById("price1").innerHTML = products[id].price;
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+</body>
+
+</html>
